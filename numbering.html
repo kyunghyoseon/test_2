@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUMBERING</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/numbering.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel&family=Nanum+Myeongjo&family=Old+Standard+TT:ital@1&family=Playfair+Display&family=Prata&family=Unna&display=swap" rel="stylesheet">
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">       폰트어썸 링크 -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/numbering.js"></script>
+    <script>
+        //상단메뉴바
+    $(function(){
+        $(".tmenu>ul>li>a").mouseenter(function(){
+            $(this).next().stop().slideDown(500);
+        });
+    
+        $(".tmenu>ul>li").mouseleave(function(){
+            //$(".sub",this).stop().slideUp(500);
+            //$("this").children(".sub").stop().slideUp(500);
+            //위에 두가지로도 적용가능 밑에 값이랑 다 같은 의미
+            $(this).find(".sub1").stop().slideUp(500);
+        });
+    });
+    </script>
+</head>
+<body>
+<div id="skip_menu" class="skip">   <!--웹 접근성 측면에서 스킵 넣어주기-->
+    <a href="#pcmenu">메뉴 바로가기</a>
+</div>  
+
+<!-- 상단 띠배너-->
+<header class="h_banner">
+    <nav class="header_banner">
+        <a href="#">회원가입 후 첫 구매시 1만원 할인</a>
+    </nav>
+</header>
+
+<!-- 상단 슬라이드 텍스트 부분-->
+<header>
+    <nav class="header_text">
+        <ul class="num_text">
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+            <a href="#"><li>NUMBERING</li></a>
+        </ul>
+    </nav>
+</header>
+
+<!-- 모바일 햄버거메뉴바, 로그인, 마이페이지 아이콘 부분 -->
+<header class="xi cf">
+    <a href="#"><i class="xi-search"></i></a>
+    <a href="#"><i class="xi-user-o"></i></a>
+    <a href="#"><i class="xi-cart-o"></i></a>
+</header>
+<button class="hamburger">
+    <a href="#"><i class="xi-bars"></i></a>
+</button>
+
+<!-- 모바일 햄버거 메뉴 -->
+<nav class="hammenu">  
+    <ul>
+      <li class="color"><a href="#">WOMEN
+        <a href="#"><i class="xi-plus"></i></a>
+          <ul class="sub">
+              <li><a href="#">Necklace</a></li>
+              <li><a href="#">Earring</a></li>
+              <li><a href="#">Ring</a></li>
+              <li><a href="#">Bracelet</a></li>
+              <li><a href="#">Anklet</a></li>
+              <li><a href="#">Belt</a></li>
+              <li><a href="#">Ready To Wear</a></li>
+              <li><a href="#">Etc</a></li>
+          </ul>
+      </li>
+      
+      <li class="color"><a href="#">MEN
+        <a href="#"><i class="xi-plus"></i></a>
+          <ul class="sub">
+              <li><a href="#">Necklace</a></li>
+              <li><a href="#">Earring</a></li>
+              <li><a href="#">Ring</a></li>
+              <li><a href="#">Bracelet</a></li>
+              <li><a href="#">Belt</a></li>
+              <li><a href="#">Etc</a></li>
+          </ul>
+      </li>
+      
+      <li class="color"><a href="#">CAMPAIGN</a></li>
+      <li class="color"><a href="#">REVIEW</a></li>
+      <li class="color"><a href="#">SIZING</a></li>
+      <li class="color"><a href="#">NOTICE</a></li>
+      </ul>
+      </nav>  <!--모바일 햄버거메뉴 종류-->
+
+<!-- 모바일 부분 -->
+<section id="new">
+    <article class="main">
+        <a href="#"><img src="img/num_gif.gif" alt="gif"></a>
+    </article>
+
+    <!-- 우먼 슬라이드 부분 -->
+    <div class="slide cf">
+        <ul class="slide_item1">
+            <li><a href="#"><img src="img/m_women_necklace_1.png" alt="img"></a></li>
+        </ul>
+        <div class="slide_box">
+            <h1>COLLETCTION</h1>
+            <ul class="slide_item2">
+                <li><a href="#"><img src="img/women_necklace_3.jpg" alt="img">
+                <span class="name">#5752</span><span>Heart Choker</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_earrings_1.jpg" alt="img">
+                <span class="name">#5132</span><span>Oval Volume Earrings</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_necklace_2.jpg" alt="img">
+                <span class="name">#7700</span><span>Outline lnitial Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_bracelet_1.jpg" alt="img">
+                <span class="name">#5917</span><span>Volume Heart Bracelet</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 맨 슬라이드 부분 -->
+    <div class="slide cf">
+        <ul class="slide_item1">
+            <li><a href="#"><img src="img/m_men_necklace_2.png" alt="img"></a></li>
+        </ul>
+        <div class="slide_box">
+            <h1>COLLETCTION</h1>
+            <ul class="slide_item2">
+                <li><a href="#"><img src="img/men_bracelet_4.gif" alt="img">
+                <span class="name">#7911</span><span>Wild Rose Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_bracelet_2.jpg" alt="img">
+                <span class="name">#1901</span><span>A13 Watch Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_necklace_3.jpg" alt="img">
+                <span class="name">#7714</span><span>Teddy Bear Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_earrings_1.jpg" alt="img">
+                <span class="name">#7113</span><span>A13 Hoops</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <a href="#"><img src="img/img7.jpg" alt=""></a>
+    </div>
+
+    <!-- best 20 슬라이드 부분 -->
+    <div class="slide cf">
+        <div class="slide_box">
+            <!-- <h1>COLLETCTION</h1> -->
+            <ul class="slide_item2">
+                <li><a href="#"><img src="img/men_ring_1.jpg" alt="img">
+                <span class="name">#1901</span><span>A13 Watch Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_ring_1.jpg" alt="img">
+                <span class="name">#7714</span><span>Teddy Bear Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_ring_1.jpg" alt="img">
+                <span class="name">#7113</span><span>A13 Hoops</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_ring_1.jpg" alt="img">
+                <span class="name">#7911</span><span>Wild Rose Bracelet</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner1">
+        <a href="#"><img src="img/img9.jpg" alt="img"></a>
+    </div>
+
+</section> <!--모바일 부분 종료-->
+
+<!-- 태블릿 메뉴바 -->
+<header class="tablet"> <!-- 태블릿 메뉴바 --> 
+    <nav class="tmenu">
+        <ul class="navi"> 
+            <h1><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+            <li class="color"><a href="#">WOMEN</a>
+                <ul class="sub1">
+                    <li><a href="#">Necklace</a></li>
+                    <li><a href="#">Earring</a></li>
+                    <li><a href="#">Ring</a></li>
+                    <li><a href="#">Bracelet</a></li>
+                    <li><a href="#">Anklet</a></li>
+                    <li><a href="#">Belt</a></li>
+                    <li><a href="#">Ready To Wear</a></li>
+                    <li><a href="#">Etc</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">MEN</a>
+                <ul class="sub1 sub2">
+                    <li><a href="#">Necklace</a></li>
+                    <li><a href="#">Earring</a></li>
+                    <li><a href="#">Ring</a></li>
+                    <li><a href="#">Bracelet</a></li>
+                    <li><a href="#">Belt</a></li>
+                    <li><a href="#">Etc</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CAMPAIGN</a></li>
+        </ul>
+        <!-- 우측 상단 메뉴바(로그인,회원가입) -->
+        <!-- <ul class="navi2 cf">
+            <li><? include "top_login1.php"; ?></li>
+        </ul> -->
+    </nav>
+</header>  <!--태블릿 메뉴바 종료-->
+
+<!-- 태블릿 부분 -->
+<section id="new1">
+    <article class="main">
+        <a href="#"><img src="img/num_gif.gif" alt="gif"></a>
+    </article>
+
+    <!-- 우먼 슬라이드 부분 -->
+    <div class="slide cf">
+        <ul class="slide_item1">
+            <li><a href="#"><img src="img/m_women_necklace_1.png" alt="img"></a></li>
+        </ul>
+        <div class="slide_box">
+            <h1>COLLETCTION</h1>
+            <ul class="slide_item2">
+                <li><a href="#"><img src="img/women_necklace_3.jpg" alt="img">
+                <span class="name">#5752</span><span>Heart Choker</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_earrings_1.jpg" alt="img">
+                <span class="name">#5132</span><span>Oval Volume Earrings</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_necklace_2.jpg" alt="img">
+                <span class="name">#7700</span><span>Outline lnitial Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_bracelet_1.jpg" alt="img">
+                <span class="name">#5917</span><span>Volume Heart Bracelet</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 맨 슬라이드 부분 -->
+    <div class="slide cf">
+        <ul class="slide_item1">
+            <li><a href="#"><img src="img/m_men_necklace_2.png" alt="img"></a></li>
+        </ul>
+        <div class="slide_box">
+            <h1>COLLETCTION</h1>
+            <ul class="slide_item2">
+                <li><a href="#"><img src="img/men_bracelet_4.gif" alt="img">
+                <span class="name">#7911</span><span>Wild Rose Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_bracelet_2.jpg" alt="img">
+                <span class="name">#1901</span><span>A13 Watch Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_necklace_3.jpg" alt="img">
+                <span class="name">#7714</span><span>Teddy Bear Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_earrings_1.jpg" alt="img">
+                <span class="name">#7113</span><span>A13 Hoops</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <a href="#"><img src="img/img7.jpg" alt=""></a>
+    </div>
+
+    <!-- best 20 슬라이드 부분 -->
+    <div class="slide cf">
+        <div class="slide_box">
+            <!-- <h1>COLLETCTION</h1> -->
+            <ul class="slide_item2">
+                <li><a href="#"><img src="img/men_ring_1.jpg" alt="img">
+                <span class="name">#1901</span><span>A13 Watch Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_ring_1.jpg" alt="img">
+                <span class="name">#7714</span><span>Teddy Bear Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_ring_1.jpg" alt="img">
+                <span class="name">#7113</span><span>A13 Hoops</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_ring_1.jpg" alt="img">
+                <span class="name">#7911</span><span>Wild Rose Bracelet</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner1">
+        <a href="#"><img src="img/img9.jpg" alt="img"></a>
+    </div>
+</section>  <!--태블릿 부분 종료-->
+
+<header class="pcmenu"> <!-- pc 메뉴바 --> 
+    <nav class="mmenu">
+        <ul class="navi"> 
+            <h1><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+            <li class="color"><a href="#">WOMEN</a>
+                <ul class="sub2">
+                    <li><a href="#">Necklace</a></li>
+                    <li><a href="#">Earring</a></li>
+                    <li><a href="#">Ring</a></li>
+                    <li><a href="#">Bracelet</a></li>
+                    <li><a href="#">Anklet</a></li>
+                    <li><a href="#">Belt</a></li>
+                    <li><a href="#">Ready To Wear</a></li>
+                    <li><a href="#">Etc</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">MEN</a>
+                <ul class="sub2">
+                    <li><a href="#">Necklace</a></li>
+                    <li><a href="#">Earring</a></li>
+                    <li><a href="#">Ring</a></li>
+                    <li><a href="#">Bracelet</a></li>
+                    <li><a href="#">Belt</a></li>
+                    <li><a href="#">Etc</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">CAMPAIGN</a></li>
+
+        </ul>
+        <!-- 우측 상단 메뉴바(로그인,회원가입) -->
+        <!-- <ul class="navi2 cf">
+            <li><? include "top_login1.php"; ?></li>
+        </ul> -->
+    </nav>
+</header>  <!--pc 메뉴바 종료-->
+
+<!-- pc 부분 -->
+<section id="new2">
+    <article class="main">
+        <a href="#"><img src="img/num_gif.gif" alt="gif"></a>
+    </article>
+    
+    <!-- 우먼 슬라이드 부분 -->
+    <div class="slide cf">
+        <ul class="slide_item1">
+            <li><a href="#"><img src="img/women_necklace_1.jpg" alt="img"></a></li>
+        </ul>
+        <div class="slide_box">
+            <h1>COLLETCTION</h1>
+            <ul class="slide_item2">
+                <li><a href="#"><img src="img/women_necklace_3.jpg" alt="img">
+                <span class="name">#5752</span><span>Heart Choker</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_earrings_1.jpg" alt="img">
+                <span class="name">#5132</span><span>Oval Volume Earrings</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_necklace_2.jpg" alt="img">
+                <span class="name">#7700</span><span>Outline lnitial Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/women_bracelet_1.jpg" alt="img">
+                <span class="name">#5917</span><span>Volume Heart Bracelet</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 맨 슬라이드 부분 -->
+    <div class="men_slide cf">
+        <ul class="men_slide_item1">
+            <li><a href="#"><img src="img/men_necklace_2.jpg" alt="img"></a></li>
+        </ul>
+        <div class="men_slide_box">
+            <h1>COLLETCTION</h1>
+            <ul class="men_slide_item2">
+                <li><a href="#"><img src="img/men_bracelet_4.gif" alt="img">
+                <span class="name">#7911</span><span>Wild Rose Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_bracelet_2.jpg" alt="img">
+                <span class="name">#1901</span><span>A13 Watch Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_necklace_3.jpg" alt="img">
+                <span class="name">#7714</span><span>Teddy Bear Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_earrings_1.jpg" alt="img">
+                <span class="name">#7113</span><span>A13 Hoops</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <a href="#"><img src="img/img7.jpg" alt=""></a>
+    </div>
+
+    <!-- best 20 슬라이드 부분 -->
+    <div class="top_slide cf">
+        <ul class="top_slide_item1">
+            <li><a href="#"><img src="img/top_men.jpg" alt="img"></a></li>
+            <li><a href="#"><img src="img/top_women.jpg" alt="img"></a></li>
+        </ul>
+        <div class="top_slide_box">
+            <h1>COLLETCTION</h1>
+            <ul class="top_slide_item2">
+                <li><a href="#"><img src="img/men_necklace_1.jpg" alt="img">
+                <span class="name">#1901</span><span>A13 Watch Bracelet</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_necklace_1.jpg" alt="img">
+                <span class="name">#7714</span><span>Teddy Bear Necklace</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_necklace_1.jpg" alt="img">
+                <span class="name">#7113</span><span>A13 Hoops</span></a>
+                </li>
+                <li><a href="#"><img src="img/men_necklace_1.jpg" alt="img">
+                <span class="name">#7911</span><span>Wild Rose Bracelet</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner1">
+        <a href="#"></a>
+    </div>
+</section>
+
+<footer>
+    <h1><a href="#">NUMBERING</a></h1>
+        <div class="footer_text">
+            <p><a href="#">Privacy</a></p>
+            <p><a href="#">Agreement</a></p>
+            <p><a href="#">Help</a></p>
+            <p><a href="#">Sizing</a></p>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+        </div>
+    <p>(04782) 10F,53, Seongsuil-ro 6-gil, Seongodong-gu, Seoul, Republic of Korea</p>
+    <p>Numbering Corp.</p>
+</footer>
+
+
+</body>
+</html>

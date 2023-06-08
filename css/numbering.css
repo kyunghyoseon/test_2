@@ -1,0 +1,678 @@
+@charset "utf-8";
+*,*:after,*:before {box-sizing: border-box; }
+a{
+    text-decoration: none; color: black;
+}
+
+/* 상단 띠배너 부분 */
+.h_banner{
+    width: 100%;
+    height: 43px;
+    line-height: 40px;
+    background: #000;
+    text-align: center;
+    position: fixed;
+    /* box-shadow: 0px 10px 50px rgb(59, 59, 59); */
+}
+.header_banner a{
+    color: #fff;
+    font-size: 0.8rem;
+    height: 20px;
+}
+/* 상단 슬라이드 텍스트 부분 */
+.header_text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.num_text{
+    display: flex;
+    justify-content: center;
+    animation: num_text 4s infinite linear;
+    position: fixed;
+    background: #fff;
+    height: 130px;
+    margin-top: 43px;
+}
+.num_text li{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 90px;
+    font-size: 85px;
+    font-weight: bold;
+}
+
+@keyframes num_text {
+    0% { margin-right: 1500px;}
+    100% {margin-right: -0px;}
+    0% {margin-right: 1500px;}
+}
+
+.tablet {display: none;}
+#new1 {display: none;}
+.pcmenu {display: none;}
+#new2 {display: none;}
+
+/* footer 부분 */
+footer{
+    width: 100%;
+    height: 360px;
+    text-align: center;
+    padding: 120px 0;
+}
+footer h1{
+    margin-bottom: 25px;
+    /* font-family: 'Nanum Myeongjo', serif; */
+}
+.footer_text p{
+    display: inline-block;
+    /* padding: 12px; */
+    margin-bottom: 18px;
+    padding: 0 10px 0 10px;
+}
+.footer_text a{
+    font-size: 0.8rem;
+}
+footer p{
+    font-size: 0.6rem;
+    padding: 2px;
+}
+
+/* 모바일 */
+@media screen and (min-width:400px){
+    .xi{display: block;}
+    .hamburger{display: block;}
+    .hammenu{display: block;}
+
+    #new {display: block;}
+    #new1 {display: none;}
+    #new2 {display: none;}
+    .tablet {display: none;}
+    .pcmenu {display: none;}
+
+/* 모바일 상단 아이콘 부분 */
+.xi{
+    margin:180px 15px 0 0;
+    float: right;
+    font-size: 25px;
+}
+.xi a{
+    padding: 3px;
+}
+/* 모바일 햄버거 메뉴바 부분 */
+.hammenu{
+    margin-top: 215px;
+}
+.hamburger{
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    float: left;
+    margin: 180px 0 0 0;
+}
+.hamburger a{
+    font-size: 28px;
+}
+.hammenu {
+    z-index: 100000;
+    font-weight: bold;
+    font-size: 15px;
+    height: 100%;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    /* top: 64px; */
+    left: -100%;        /*햄버거 메뉴 닫혔을때*/
+    /*right: 0;*/         /* 햄버거 메뉴 열렸을때*/
+    transition: all 0.5s;
+
+}
+.hammenu.open {left: 0;}   /*토글 클래스로 붙였다, 땠다 기능을 해줘야함*/
+.hammenu ul{
+    padding-top: 30px;
+    height: 100%;
+    font-weight: normal;
+}
+.hammenu li {
+    padding: 15px 0;
+    position: relative;
+    text-indent: 30px;
+}
+.hammenu ul li a{
+    color: #fff;
+}
+.hammenu a:hover{
+    color: #ffe6007e;
+}
+
+.xi-plus {
+    position: absolute;
+    right: 10px;
+}
+.xi-minus{
+    position: absolute;
+    right: 10px;
+}
+.sub {
+    text-align: center;
+    font-size: 0.9rem;
+    display:none;
+}
+.sub li {padding: 0;}
+.sub li a {
+    padding: 5px 0;
+    display: block;
+}
+.sub a:hover {
+    color: #ffe6007e;
+}
+
+/* 메인 상단 동영상 부분 */
+.main{
+    width: 100%;
+    margin-bottom: 80px;
+}
+.main img{
+    width: 100%;
+}
+
+/* 슬라이드 부분 */
+.slide{
+    width: 100%;
+    z-index: -9999;
+}
+.slide_item1{
+    width: 100%;
+    margin-bottom: 0px;
+}
+.slide_item1 img{
+    width: 100%;
+    margin-top: 100px;
+}
+.slide_box{
+    width: 100%;
+    text-align: center;
+    padding: 35px;
+}
+.slide_box h1{
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    color: #000000;
+}
+.slide_item2{
+    margin:10px auto;
+    z-index: -9999;
+}
+.slide_item2 li{
+    text-align: center;
+}
+.slide_item2 img{
+    width: 100%;
+    margin: 10px 0 50px 0;
+
+}
+.slide_item2 span{
+    display: block;
+}
+.slick-prev {display: none;}
+.slick-next {display: none;}
+.slide_box button.slick-prev {
+    left: -3.5rem;
+    font-size: 0;
+    color: #000;
+    z-index: 9999;
+    background: none;
+    border: none;
+}
+.slide_box button.slick-next {
+    right: -3.5rem;
+    font-size: 0;
+    color: #000;
+    z-index: 9999;
+    background: none;
+    border: none;
+}
+.slick-dots {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.slick-dots li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}            
+.slick-dots >li >button{
+    font-size: 0;
+    color: #fff;
+    width: 0px;
+    height: 0px;
+    border: none;
+    background: #d8d8d8;
+    border-radius: 100%;
+}
+.slick-dots >li.slick-active button {
+    background: #3d3d3d;
+} 
+
+/* 배너 부분 */
+.banner{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.banner img{
+    width: 100%;
+}
+.banner1{
+    width: 100%;
+    margin-top: 110px;
+}
+.banner1 img{
+    width: 100%;
+}
+    
+}
+
+/* 태블릿 */
+@media screen and (min-width:641px){
+    .xi{display: none;}
+    .hamburger{display: none;}
+    .hammenu{display: none;}
+
+    #new {display: none;}
+    #new1 {display: block;}
+    #new2 {display: none;}
+    .tablet {display: block; height: 150px;}
+    .pcmenu {display: none;}
+
+/*태블릿 상단 메뉴바 */
+.tablet{
+    position: absolute;
+    width: 100%;
+    top: 173px;
+    min-width: 960px;
+    background-color: #dddddd9a;
+    box-shadow: 0px 5px 30px rgb(209, 209, 209);
+    position: fixed;
+    height: 50px;
+}
+.tmenu h1{
+    width: 200px;
+    float: left;
+}
+.tmenu h1 img{
+    width: 180px;
+    padding: 15px 0 0 15px;
+}  
+.navi {
+    height:50px;
+    width:100%;
+    margin:0 auto;
+}
+.navi > li {
+    float:left;
+    width:160px;
+    position:relative;
+}
+.navi > li a {
+    display:block;
+    line-height:50px;
+    color:#000;
+  /* font-weight:bold; */
+  text-align:center;
+  text-decoration: none; 
+  font-size: 0.9rem;
+}
+.navi > li:hover >a {
+    background:#000000;
+    color:#fff;
+}
+.navi > li .sub1 {
+    position:absolute;
+    left:0;
+    top:50px;
+    display:none;
+    /*width:100%;*/
+   background:#f8f8f8c0;
+   z-index:9999;
+   width:160px;
+}
+  /* .navi > li:hover .sub {display:block;} */
+  .navi .sub1 li a {
+    display:block;
+    height:40px;
+    line-height:40px;
+    padding:0 15px;
+  text-decoration:none;
+  color:#4d4100;
+}
+  .navi .sub1 li:hover a {
+    color:#cab181;
+    /* font-weight: bold; */
+}
+
+/* 메인 상단 동영상 부분 */
+.main{
+    width: 100%;
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+.main img{
+    width: 100%;
+}
+
+/* 슬라이드 부분 */
+.slide{
+    width: 100%;
+    z-index: -9999;
+}
+.slide_item1{
+    width: 100%;
+    margin-bottom: 0px;
+}
+.slide_item1 img{
+    width: 100%;
+    margin-top: 100px;
+}
+.slide_box{
+    width: 100%;
+    text-align: center;
+    padding: 60px;
+}
+.slide_box h1{
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 24px;
+    color: #000000;
+}
+.slide_item2{
+    margin:10px auto;
+    z-index: -9999;
+}
+.slide_item2 li{
+    text-align: center;
+}
+.slide_item2 img{
+    width: 100%;
+    margin: 10px 0 50px 0;
+}
+.slide_item2 span{
+    display: block;
+}
+.slick-prev {display: none;}
+.slick-next {display: none;}
+.slide_box button.slick-prev {
+    left: -3.5rem;
+    font-size: 0;
+    color: #000;
+    z-index: 9999;
+    background: none;
+    border: none;
+}
+.slide_box button.slick-next {
+    right: -3.5rem;
+    font-size: 0;
+    color: #000;
+    z-index: 9999;
+    background: none;
+    border: none;
+}
+.slick-dots {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.slick-dots li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}            
+.slick-dots >li >button{
+    font-size: 0;
+    color: #fff;
+    width: 0px;
+    height: 0px;
+    border: none;
+    background: #d8d8d8;
+    border-radius: 100%;
+}
+.slick-dots >li.slick-active button {
+    background: #3d3d3d;
+} 
+/* 배너 부분 */
+.banner{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.banner img{
+    width: 100%;
+}
+.banner1{
+    width: 100%;
+    margin-top: 110px;
+}
+.banner1 img{
+    width: 100%;
+}
+}
+
+/* pc */
+@media screen and (min-width:999px){
+    .xi{display: none;}
+    .hamburger{display: none;}
+    .hammenu{display: none;}
+
+    #new {display: none;}
+    #new1 {display: none;}
+    #new2 {display: block;}
+    .tablet {display: block;}
+    .pcmenu {display: none;}
+    
+/* 메인 상단 동영상 부분 */
+.main{
+    width: 100%;
+    margin-bottom: 250px;
+}
+.main img{
+    width: 100%;
+}
+
+/* 슬라이드 부분 */
+.slide{
+    width: 100%;
+    z-index: -9999;
+    /* border: 1px solid red; */
+}
+.slide_item1{
+    width: 50%;
+    margin-bottom: 0px;
+    /* border: 1px solid blue; */
+    float: left;
+}
+.slide_item1 img{
+    width: 100%;
+    /* margin: 100px auto; */
+    /* margin-top: 200px; */
+}
+.slide_box{
+    width: 50%;
+    /* text-align: center; */
+    float: right;
+    margin-top: 200px;
+    /* border: 1px solid red; */
+}
+.slide_box h1{
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 26px;
+    color: #000000;
+}
+.slide_item2{
+    margin: 0px 150px 0px 150px;
+    z-index: -9999;
+}
+.slide_item2 li{
+    text-align: center;
+}
+.slide_item2 img{
+    width: 100%;
+    /* margin: 10px 0 50px 0; */
+
+}
+.slide_item2 span{
+    display: block;
+}
+
+.men_slide{
+    width: 100%;
+    z-index: -9999;
+    /* border: 1px solid red; */
+}
+.men_slide_item1{
+    width: 50%;
+    margin-bottom: 0px;
+    /* border: 1px solid blue; */
+    float: right;
+}
+.men_slide_item1 img{
+    width: 100%;
+    /* margin: 100px auto; */
+    /* margin-top: 200px; */
+}
+.men_slide_box{
+    width: 50%;
+    /* text-align: center; */
+    float: left;
+    margin-top: 200px;
+    /* border: 1px solid red; */
+}
+.men_slide_box h1{
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 26px;
+    color: #000000;
+}
+.men_slide_item2{
+    margin: 0px 200px 0px 200px;
+    z-index: -9999;
+}
+.men_slide_item2 li{
+    text-align: center;
+}
+.men_slide_item2 img{
+    width: 100%;
+    margin: 10px 0 50px 0;
+
+}
+.men_slide_item2 span{
+    display: block;
+}
+.men_slide_box button.slick-prev {
+    left: -3.5rem;
+    font-size: 0;
+    color: #000;
+    z-index: 9999;
+    background: none;
+    border: none;
+}
+.men_slide_box button.slick-next {
+    right: -3.5rem;
+    font-size: 0;
+    color: #000;
+    z-index: 9999;
+    background: none;
+    border: none;
+}
+.banner{
+    width: 100%;
+    margin-top: 300px;
+    margin-bottom: 150px;
+}
+.banner img{
+    width: 100%;
+}
+
+.top_slide{
+    width: 100%;
+    z-index: -9999;
+    /* border: 1px solid red; */
+    margin-top: 200px;
+    padding: 100px 0 50px 0;
+}
+.top_slide_item1{
+    width: 60%;
+    /* border: 1px solid blue; */
+    float: left;
+    display: flex;
+    /* margin: 50px 0px 50px 25px; */
+    justify-content: center;
+}
+.top_slide_item1 img{
+    width: 100%;
+    /* margin: 100px auto; */
+    /* margin-top: 200px; */
+}
+.top_slide_box{
+    width: 40%;
+    /* text-align: center; */
+    float: right;
+    margin-top: 80px;
+    padding: 20px;
+    /* border: 1px solid yellow; */
+}
+.top_slide_box h1{
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 26px;
+    color: #000000;
+}
+.top_slide_item2{
+    margin: 0px 180px 0px 180px;
+    z-index: -9999;
+}
+.top_slide_item2 li{
+    text-align: center;
+}
+.top_slide_item2 img{
+    width: 100%;
+    margin: 10px 0 50px 0;
+}
+.top_slide_item2 span{
+    display: block;
+}
+.top_slide_box button.slick-prev {
+    left: -3.5rem;
+    font-size: 0;
+    color: #000;
+    z-index: 9999;
+    background: none;
+    border: none;
+}
+.top_slide_box button.slick-next {
+    right: -3.5rem;
+    font-size: 0;
+    color: #000;
+    z-index: 9999;
+    background: none;
+    border: none;
+}
+
+.banner1{
+    margin-top: 300px;
+    background: url(../img/img9.jpg) no-repeat 0 center fixed;
+    /* background-size: 100%; */
+    width: 100%;
+    height: 1000px;
+}
+
+
+}
+
